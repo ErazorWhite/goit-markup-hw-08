@@ -1,0 +1,26 @@
+@import './utils/variables';
+@import './utils/shared';
+@import './utils/placeholders';
+
+@import './layout/header';
+@import './layout/logo';
+
+@import './components/button';
+@import './components/socials';
+@import './components/form';
+
+@import './pages/studio/hero';
+@import './pages/studio/benefits';
+@import './pages/studio/product';
+@import './pages/studio/team';
+@import './pages/studio/customers';
+
+@import './pages/portfolio/filter';
+@import './pages/portfolio/projects';
+
+@import './components/backdrop';
+@import './components/modal';
+
+@import './layout/footer';
+@import './components/subscribe';
+

@@ -1,0 +1,18 @@
+.filter {
+    &__list {
+        @extend %list;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        transition: background-color 250ms $cubic, color 250ms $cubic, box-shadow 250ms $cubic;
+    }
+}

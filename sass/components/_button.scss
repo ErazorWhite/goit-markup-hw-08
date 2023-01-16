@@ -1,0 +1,38 @@
+.button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    text-align: center;
+    background-color: $primaryLight;
+    color: $primaryDark;
+
+    &__primary {
+        background-color: $accent;
+        color: $primaryLight;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        &:hover,
+        &:focus {
+            background-color: $heroAccent;
+        }
+    }
+
+    &__secondary {
+        padding: 6px 22px;
+
+        background-color: $secondaryLight;
+        color: $primaryDark;
+
+        &:hover,
+        &:focus {
+            background-color: $accent;
+            color: $primaryLight;
+
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.form {
+    max-width: 448px;
+
+    &__button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 200px;
+        min-height: 50px;
+
+        transition: background-color 250ms $cubic;
+    }
+}
+
+.form-field {
+    &__control {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 4px;
+
+        font-size: 12px;
+        line-height: 1.17;
+
+        letter-spacing: 0.01em;
+
+        color: $secondaryDark;
+    }
+
+    &__input {
+        padding: 12px 12px 12px 42px;
+
+        max-height: 40px;
+
+        border: 1px solid $modalFormBorder;
+        border-radius: 4px;
+        transition: border-color 250ms $cubic;
+
+        &:hover,
+        &:focus {
+            border-color: $accent;
+        }
+
+        &:hover + .form-field__icon,
+        &:focus + .form-field__icon {
+            fill: $accent;
+        }
+    }
+
+    &__textarea-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    &__textarea {
+        @extend %textarea;
+        padding: 12px 16px;
+        min-height: 120px;
+
+        border: 1px solid $modalFormBorder;
+        border-radius: 4px;
+        transition: border-color 250ms $cubic;
+
+        &:hover,
+        &:focus {
+            border-color: $accent;
+        }
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+
+            color: $placeholder;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        transform: translate(12px, -50%);
+        transition: fill 250ms $cubic;
+        pointer-events: none;
+    }
+}
+
+/* Form-field → Policy */
+
+.policy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 30px;
+
+    &__checkbox:checked + .checkbox__icon {
+        border-color: $accent;
+        background-color: $accent;
+        fill: $primaryLight;
+    }
+
+    &__description {
+        display: flex;
+        align-items: center;
+        gap: 8.38px;
+
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+
+        color: $secondaryDark;
+    }
+
+    &__link {
+        text-decoration: underline;
+
+        color: $accent;
+    }
+}
+
+.checkbox__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid $primaryDark;
+    border-radius: 2px;
+
+    fill: transparent;
+}

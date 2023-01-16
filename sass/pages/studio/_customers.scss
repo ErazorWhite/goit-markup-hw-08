@@ -1,0 +1,29 @@
+.customers {
+    &__list {
+        @extend %list;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 150px) / 6);
+    }
+
+    &__link {
+        @extend %link;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92px;
+        border: 1px solid $IconsPrimaryBg;
+        border-radius: 4px;
+        color: $IconsPrimaryBg;
+        transition: border-color 250ms $cubic, color 250ms $cubic;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+            border-color: $accent;
+        }
+    }
+}
