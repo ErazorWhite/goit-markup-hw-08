@@ -2,10 +2,11 @@
 @import './utils/shared';
 @import './utils/placeholders';
 
-@import './layout/header';
+@import './components/button';
 @import './layout/logo';
 
-@import './components/button';
+@import './layout/header';
+
 @import './components/socials';
 @import './components/form';
 
