@@ -1,8 +1,8 @@
 .hero {
     margin-right: auto;
     margin-left: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
 
     background-repeat: no-repeat;
@@ -11,6 +11,11 @@
     background-color: $heroBg;
     background-image: linear-gradient(0, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
         url("../images/studio/hero.jpg");
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }h
 
     &__container {
         @extend .container;
@@ -29,13 +34,18 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
-
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
         letter-spacing: 0.06em;
+        font-size: 26px;
+        line-height: 1.62;
+
         text-transform: uppercase;
 
         color: $primaryLight;
+
+        @media screen and (min-width: $desktop) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 }
