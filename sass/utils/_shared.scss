@@ -45,8 +45,8 @@ img {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &__title {
         margin-bottom: 50px;
@@ -56,6 +56,11 @@ img {
         font-size: 36px;
         line-height: 1.17;
         letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
@@ -70,6 +75,8 @@ img {
 
     @media screen and (min-width: $tablet) {
         width: $tablet;
+        max-width: $desktop;
+        
         outline: 5px solid tomato;
     }
 
