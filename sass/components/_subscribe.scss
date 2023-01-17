@@ -6,20 +6,32 @@
         display: inline-block;
         width: 100%;
         margin-bottom: 20px;
+        text-align: center;
 
         font-size: 14px;
-        line-height: 0.875;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
         color: $primaryLight;
+        @media screen and (min-width: $desktop) {
+            text-align: start;
+            line-height: 0.875;
+        }
     }
 
     &__container {
         display: flex;
-        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
 
         min-height: 50px;
+
+        @media screen and (min-width: $desktop) {
+            flex-direction: row;
+            gap: 12px;
+        }
     }
 
     &__input {
@@ -36,6 +48,14 @@
 
         color: $primaryLight;
         background-color: $footerBg;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: 450px;
+        }
     }
 
     &__button {
@@ -44,9 +64,10 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        min-width: 200px;
+        width: 200px;
         min-height: 50px;
-
+        min-width: 200px;
+        
         background-color: $accent;
         color: $primaryLight;
         
