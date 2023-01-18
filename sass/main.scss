@@ -1,14 +1,8 @@
-@import './utils/variables';
-@import './utils/shared';
-@import './utils/placeholders';
+@import './utils/_main';
+@import './components/_main';
 
-@import './components/button';
 @import './layout/logo';
-
 @import './layout/header';
-
-@import './components/socials';
-@import './components/form';
 
 @import './pages/studio/hero';
 @import './pages/studio/benefits';
@@ -19,9 +13,6 @@
 @import './pages/portfolio/filter';
 @import './pages/portfolio/projects';
 
-@import './components/backdrop';
-@import './components/modal';
-
 @import './layout/footer';
-@import './components/subscribe';
+
 
