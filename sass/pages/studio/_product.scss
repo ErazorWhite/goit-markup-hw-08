@@ -36,7 +36,7 @@
         color: $primaryLight;
     }
 
-    @media screen and (min-width: $desktop) {
-        display: block;        
+    @media screen and (min-width: $bp-desktop) {
+        display: block;
     }
 }

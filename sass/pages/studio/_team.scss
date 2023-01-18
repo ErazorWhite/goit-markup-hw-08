@@ -7,7 +7,7 @@
         flex-direction: column;
         gap: 30px;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $bp-tablet) {
             flex-direction: row;
             flex-wrap: wrap;
         }
@@ -20,7 +20,7 @@
         border-radius: 0px 0px 4px 4px;
         background-color: $primaryLight;
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $bp-desktop) {
             flex-basis: calc((100% - 90px) / 4);
         }
     }
@@ -35,7 +35,7 @@
         padding-top: 30px;
         padding-bottom: 24px;
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $bp-desktop) {
             padding-bottom: 30px;
         }
     }

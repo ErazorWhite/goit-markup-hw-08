@@ -12,7 +12,7 @@
     background-image: linear-gradient(0, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
         url("../images/studio/hero.jpg");
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $bp-desktop) {
         padding-top: 200px;
         padding-bottom: 200px;
     }
@@ -43,7 +43,7 @@
 
         color: $primaryLight;
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $bp-desktop) {
             font-size: 44px;
             line-height: 1.36;
         }

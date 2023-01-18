@@ -110,11 +110,16 @@
         align-items: center;
         gap: 8.38px;
 
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
 
         color: $secondaryDark;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     &__link {
