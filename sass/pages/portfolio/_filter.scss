@@ -2,9 +2,21 @@
     &__list {
         @extend %list;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: left;
         gap: 8px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        @include for-tablet-landscape-up {
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__wrapper {
+        @extend %list;
+        display: flex;
+        gap: 8px;
+
     }
 
     &__button {
