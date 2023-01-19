@@ -6,7 +6,7 @@
         justify-content: left;
         gap: 8px;
         margin-bottom: 40px;
-        @include for-tablet-landscape-up {
+        @include for-tablet-up {
             justify-content: center;
             margin-bottom: 50px;
         }
@@ -16,7 +16,6 @@
         @extend %list;
         display: flex;
         gap: 8px;
-
     }
 
     &__button {

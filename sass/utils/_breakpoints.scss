@@ -9,7 +9,7 @@ $bp-desktop: 1200px;
     }
 }
 
-@mixin for-tablet-landscape-up {
+@mixin for-tablet-up {
     @media (min-width: $bp-tablet) {
         @content;
     }
