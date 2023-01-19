@@ -76,17 +76,14 @@ img {
     margin-right: auto;
     padding: 0px 15px;
 
-    outline: 5px solid yellow;
 
     @media screen and (min-width: $bp-tablet) {
         width: $bp-tablet;
         max-width: $bp-desktop;
 
-        outline: 5px solid tomato;
     }
 
     @media screen and (min-width: $bp-desktop) {
         width: $bp-desktop;
-        outline: 5px solid purple;
     }
 }

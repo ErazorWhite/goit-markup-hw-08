@@ -23,29 +23,37 @@
         <a href="./" class="header__logo">
           <span class="logo__particle">Web</span>Studio
         </a>
-
+  
         <ul class="header__pages">
-          <li><a href="./" class="header__link">Студія</a></li>
+          <li><a href="./" class="header__link header__page">Студія</a></li>
           <li>
-            <a href="./portfolio.html" class="header__link header__link--current">Портфоліо</a>
+            <a href="./portfolio.html" class="header__link header__page header__link--current">Портфоліо</a>
           </li>
-          <li><a href="#" class="header__link">Контакти</a></li>
+          <li><a href="#" class="header__link header__page">Контакти</a></li>
         </ul>
       </nav>
-
-      <ul class="header__contacts list">
+  
+      <ul class="header__contacts">
         <li>
-          <a href="mailto:info@devstudio.com" class="header__link">
+          <a href="mailto:info@devstudio.com" class="header__link header__contact">
             <svg class="header__icon icon" width="16px" height="12px">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111" class="header__link"><svg class="header__icon icon" width="10px" height="16px">
+          <a href="tel:+380961111111" class="header__link header__contact"><svg class="header__icon icon" width="10px"
+              height="16px">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+  
+      <button class="header__burger icon js-open-menu" type="button">
+        <svg width="24" height="16">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+  
     </div>
   </header>
 
@@ -61,7 +69,7 @@
             <ul class="filter__wrapper">
               <li class="filter__item">
                 <button type="button" class="button filter__button button__secondary">Усі</button>
-              </li>
+              </li> 
               <li class="filter__item">
                 <button type="button" class="button filter__button button__secondary">Веб-сайти</button>
               </li>
@@ -86,7 +94,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example1.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example1.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це дозволить відвідувачу отримати
@@ -104,7 +112,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example2.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example2.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
                     provident
@@ -123,7 +131,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example3.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example3.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi et
                     culpa
@@ -142,7 +150,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example4.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example4.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse deserunt
                     itaque repudiandae corporis totam, omnis, eius dolore doloribus dicta sint eos, quos quae facilis
@@ -160,7 +168,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example5.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example5.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
                     architecto
@@ -179,7 +187,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example6.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example6.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
                     voluptatem
@@ -199,7 +207,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example7.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example7.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi minus
                     rerum
@@ -218,7 +226,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example8.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example8.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam placeat
                     corporis dolorem sit porro ad nostrum nam quisquam eos eius explicabo, voluptatem enim nisi amet
@@ -237,7 +245,7 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img src="./images/portfolio/project_example9.jpg" alt="приклад проєкта" width="370" height="294" />
+                <img class="projects__img" src="./images/portfolio/project_example9.jpg" alt="приклад проєкта" width="370" height="294" />
                 <div class="projects__overlay">
                   <p class="projects__poptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque quo
                     corporis consequuntur minima maiores, amet quam a consectetur laboriosam saepe pariatur quia dolor
@@ -256,66 +264,97 @@
     </section>
   </main>
 
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container">
+      <div class="mobile-menu__container">
+        <button class="mobile-menu__close js-close-menu" type="button">
+          <svg class="icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__pages">
+          <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link mobile-menu__page">Студія</a></li>
+          <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link mobile-menu__page">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link mobile-menu__page">Контакти</a></li>
+        </ul>
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__item"><a href="tel:+380961111111" class="mobile-menu__link mobile-menu__phone">+38 096 111
+              11 11</a></li>
+          <li class="mobile-menu__item"><a href="mailto:info@devstudio.com"
+              class="mobile-menu__link mobile-menu__email">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li><a href="" class="mobile-menu__link">Instagram</a><span class="mobile-menu__particle">&nbsp|&nbsp</span></li>
+          <li><a href="" class="mobile-menu__link">Twitter</a><span class="mobile-menu__particle">&nbsp|&nbsp</span></li>
+          <li><a href="" class="mobile-menu__link">Facebook</a><span class="mobile-menu__particle">&nbsp|&nbsp</span></li>
+          <li><a href="" class="mobile-menu__link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
-
-      <div class="footer__navigation">
-
-        <a href="/" class="footer__logo">
-          <span class="logo__particle">Web</span>Studio
-        </a>
-
-        <address>
-          <ul class="list">
-            <li class="footer__item">
-              <a href="https://goo.gl/maps/rB3SQ3F6U8PJNXKP9" class="footer__location footer__link">м. Київ, пр-т
-                Лесі Українки, 26</a>
+  
+      <div class="footer__thumb">
+        <div class="footer__navigation">
+  
+          <a href="/" class="footer__logo">
+            <span class="logo__particle">Web</span>Studio
+          </a>
+  
+          <address>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="https://goo.gl/maps/rB3SQ3F6U8PJNXKP9" class="footer__location footer__link">м. Київ, пр-т
+                  Лесі Українки, 26</a>
+              </li>
+              <li class="footer__item">
+                <a href="mailto:info@devstudio.com" class="footer__email footer__link">info@devstudio.com</a>
+              </li>
+              <li class="footer__item">
+                <a href="tel:+380961111111" class="footer__phone footer__link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+  
+        <div class="socials">
+          <h2 class="socials__title">приєднуйтесь</h2>
+          <ul class="socials__links">
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer__item">
-              <a href="mailto:info@devstudio.com" class="footer__email footer__link">info@devstudio.com</a>
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer__item">
-              <a href="tel:+380961111111" class="footer__phone footer__link">+38 096 111 11 11</a>
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
-
-      <div class="socials">
-        <h2 class="socials__title">приєднуйтесь</h2>
-        <ul class="socials__links list">
-          <li>
-            <a href="#" class="socials__link">
-              <svg class="icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="socials__link">
-              <svg class="icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="socials__link">
-              <svg class="icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="socials__link">
-              <svg class="icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
+  
       <div class="subscribe">
         <b class="subscribe__title">Підпишіться на розсилку</b>
         <form class="subscribe__container" action="#">
@@ -328,9 +367,10 @@
           </button>
         </form>
       </div>
-
+  
     </div>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
