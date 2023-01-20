@@ -4,6 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 999;
 
     transform: translate(-100%);
     transition: transform 500ms $cubic;
@@ -17,7 +18,9 @@
     &__container {
         position: relative;
         padding: 48px 40px;
-        min-height: 768px;
+        height: 100%;
+
+        overflow: scroll;
     }
 
     &__close {
@@ -36,7 +39,7 @@
 
     &__link {
         @extend %link;
-        display: inline-block;
+        display: block;
 
         transition: color 250ms $cubic;
     }
@@ -100,8 +103,12 @@
         letter-spacing: 0.02em;
     }
 
+    &__social {
+        display: flex;
+    }
+
     &__particle {
-        display: inline-block;
+        display: block;
 
         color: rgba(33, 33, 33, 0.2);
     }

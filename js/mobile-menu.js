@@ -4,7 +4,7 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
   const toggleMenu = () => {
-    // document.body.classList.toggle("modal-open");
+    document.body.classList.toggle("modal-open");
 
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
