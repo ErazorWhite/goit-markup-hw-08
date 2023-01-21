@@ -48,7 +48,8 @@
         </li>
       </ul>
   
-      <button class="header__burger icon js-open-menu" type="button">
+      <button class="header__burger icon js-open-menu" type="button" aria-label="Перемикач мобільного меню"
+        aria-controls="menu-container" aria-expanded="false">
         <svg width="24" height="16">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
@@ -265,33 +266,36 @@
   </main>
 
     <!-- Mobile menu -->
-    <div class="mobile-menu js-menu-container">
-      <div class="mobile-menu__container">
-        <button class="mobile-menu__close js-close-menu" type="button">
-          <svg class="icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu__pages">
-          <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link mobile-menu__page">Студія</a></li>
-          <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link mobile-menu__page">Портфоліо</a>
-          </li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link mobile-menu__page">Контакти</a></li>
-        </ul>
-        <ul class="mobile-menu__contacts">
-          <li class="mobile-menu__item"><a href="tel:+380961111111" class="mobile-menu__link mobile-menu__phone">+38 096 111
-              11 11</a></li>
-          <li class="mobile-menu__item"><a href="mailto:info@devstudio.com"
-              class="mobile-menu__link mobile-menu__email">info@devstudio.com</a></li>
-        </ul>
-        <ul class="mobile-menu__socials">
-          <li><a href="" class="mobile-menu__link">Instagram</a><span class="mobile-menu__particle">&nbsp|&nbsp</span></li>
-          <li><a href="" class="mobile-menu__link">Twitter</a><span class="mobile-menu__particle">&nbsp|&nbsp</span></li>
-          <li><a href="" class="mobile-menu__link">Facebook</a><span class="mobile-menu__particle">&nbsp|&nbsp</span></li>
-          <li><a href="" class="mobile-menu__link">LinkedIn</a></li>
-        </ul>
-      </div>
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu__container">
+      <button class="mobile-menu__close js-close-menu" type="button">
+        <svg class="icon" id="menu-container" width="24" height="24" aria-label="Перемикач мобільного меню">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__pages">
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link mobile-menu__page">Студія</a></li>
+        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link mobile-menu__page">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link mobile-menu__page">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__item"><a href="tel:+380961111111" class="mobile-menu__link mobile-menu__phone">+38 096
+            111 11 11</a></li>
+        <li class="mobile-menu__item"><a href="mailto:info@devstudio.com"
+            class="mobile-menu__link mobile-menu__email">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__social"><a href="#" class="mobile-menu__link">Instagram</a><span
+            class="mobile-menu__particle">&nbsp|&nbsp</span></li>
+        <li class="mobile-menu__social"><a href="#" class="mobile-menu__link">Twitter</a><span
+            class="mobile-menu__particle">&nbsp|&nbsp</span></li>
+        <li class="mobile-menu__social"><a href="#" class="mobile-menu__link">Facebook</a><span
+            class="mobile-menu__particle">&nbsp|&nbsp</span></li>
+        <li class="mobile-menu__social"><a href="#" class="mobile-menu__link">LinkedIn</a></li>
+      </ul>
     </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
