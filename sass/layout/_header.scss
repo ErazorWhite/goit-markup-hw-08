@@ -98,8 +98,22 @@
         }
     }
 
-    &__icon {
+    &__icon-email {
         margin-right: 10px;
+
+        @include for-tablet-up {
+            width: 14px;
+            height: 10px;
+        }
+    }
+
+    &__icon-phone {
+        margin-right: 10px;
+
+        @include for-tablet-up {
+            width: 10px;
+            height: 14px;
+        }
     }
 
     &__burger {

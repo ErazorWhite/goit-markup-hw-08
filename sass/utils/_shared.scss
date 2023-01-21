@@ -81,13 +81,13 @@ img {
     padding: 0px 15px;
 
 
-    @media screen and (min-width: $bp-tablet) {
+    @include for-tablet-up {
         width: $bp-tablet;
         max-width: $bp-desktop;
 
     }
 
-    @media screen and (min-width: $bp-desktop) {
+    @include for-desktop-up {
         width: $bp-desktop;
     }
 }

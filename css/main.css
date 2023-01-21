@@ -82,13 +82,13 @@ img {
   margin-right: auto;
   padding: 0px 15px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container, .footer__container, .hero__container, .header__container {
     width: 768px;
     max-width: 1200px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container, .footer__container, .hero__container, .header__container {
     width: 1200px;
   }
@@ -301,6 +301,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -317,6 +319,7 @@ img {
   }
 }
 .policy__link {
+  display: block;
   text-decoration: underline;
   color: #2196f3;
 }
@@ -324,7 +327,9 @@ img {
 .checkbox__icon {
   display: inline-block;
   width: 16px;
+  min-width: 16px;
   height: 15px;
+  min-height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
   fill: transparent;
@@ -371,15 +376,36 @@ img {
 .modal__container {
   position: relative;
   padding: 40px;
-  height: 100%;
-  max-height: 581px;
   width: 100%;
-  max-width: 528px;
+  height: 100%;
+  max-width: 450px;
+  max-height: 609px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
   overflow-y: auto;
+}
+@media screen and (max-width: 459px) {
+  .modal__container {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 334px) {
+  .modal__container {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .modal__container {
+    width: 450px;
+    max-width: none;
+  }
+}
+@media (min-width: 1200px) {
+  .modal__container {
+    width: 528px;
+  }
 }
 .modal__close {
   position: absolute;
@@ -575,6 +601,9 @@ img {
 .mobile-menu__page:hover, .mobile-menu__page:focus {
   color: #2196f3;
 }
+.mobile-menu__page--current {
+  color: #2196f3;
+}
 .mobile-menu__contacts {
   margin-bottom: 64px;
 }
@@ -749,8 +778,23 @@ img {
     padding: 32px 0px;
   }
 }
-.header__icon {
+.header__icon-email {
   margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .header__icon-email {
+    width: 14px;
+    height: 10px;
+  }
+}
+.header__icon-phone {
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .header__icon-phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 .header__burger {
   display: -webkit-box;
